@@ -10,31 +10,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h2 class="nombre-usuario">Juanita</h2>
-            <h3 class="desc-usuario">Amante de libros romanticos</h3>
+    <navbar class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container-fluid">
+            <h1 class="mb-lg-0">Buscar más libros</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse my-1" id="navbarSupportedContent">
+                <form class="d-flex mx-lg-auto ">
+                    <div class="col-auto">
+                        <label class="col-form-label" for="book-search">Introducir nombre del libro</label>
+                    </div>
+                    <input type="search" class="form-control ms-4" name="" id="book-search">
+                    <button type="submit" value="" class="btn btn-outline-success ms-2 ">
+                        <i class="bi-search"></i>
+                    </button>
+                </form>
+                <div class="navbar-brand ms-lg-4 ">
+                    <h2 class="nombre-usuario h4">Juanita</h2>
+                    <h3 class="desc-usuario h5">Amante de libros romanticos</h3>
+                </div>
+            </div>
         </div>
-        <h1>Buscar más libros</h1>
-        <form action="">
-            <label for="book-search">Introducir nombre del libro</label>
-            <input type="text" name="" id="book-search">
-            <button type="submit" value="">
-                <i class="bi-search"></i>
-            </button>
-        </form>
-    </header>
+    </navbar>
 
-    <div class="book-list col-6 mx-auto d-flex flex-column">
-        <div class="book-div">
-            <img src="" alt="">
-            <h3 class="book-title">Narraciones Extraordinarias</h3>
-            <h4 class="book-author">Edgar Allan Poe</h4>
-        </div>
-        <div class="book-div">
-            <img src="" alt="">
-            <h3 class="book-title">Narraciones Extraordinarias</h3>
-            <h4 class="book-author">Edgar Allan Poe</h4>
+    <div class="book-list d-flex flex-column">
+        <div class="container-fluid">
+            <div class="mx-auto" >
+                <div class="book-div card mb-4 mx-auto" style="width: 18rem;">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="book-title card-title">Narraciones Extraordinarias</h3>
+                        <p class="book-author card-text">Edgar Allan Poe</p>
+                    </div>
+                </div>
+                <div class="book-div card mb-4 mx-auto" style="width: 18rem;">
+                    <img src="" alt="" class="card-img-top">
+                    <div class="card-body">
+                        <h3 class="book-title card-title">Narraciones Extraordinarias</h3>
+                        <p class="book-author card-text">Edgar Allan Poe</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
