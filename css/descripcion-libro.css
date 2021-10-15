@@ -1,0 +1,13 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+div > div.col-xl-2 {
+    cursor: pointer;
+}
+
+.libro {
+    padding: 30px;
+}
+
+.result{
+    margin-top:20px;
+}
