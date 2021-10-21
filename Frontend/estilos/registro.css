@@ -1,26 +1,27 @@
 h1{
     text-align: center;
+    font-family: 'open sans';
 }
 .marg-form{
     padding: 12px;
-    font-size: 16px;
+    font-size: 15px;
     overflow: hidden;
     width: 70%;
     margin: 40px auto 5px;
-    border: 3px solid black;
+    border: 3px solid;
 }
 .caja-texto{
     width: 60%;
     padding: 5px;
-    font-size: 16px;
+    font-size: 15px;
     margin-bottom: 8px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'open sans';
 }
 .caja-radio{
     padding: 5px;
     margin-bottom: 8px;
-    font-size: 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-family: 'open sans';
     cursor: pointer;
 }
 a{
@@ -28,7 +29,7 @@ a{
     cursor: pointer;
 }
 form a:hover{
-    color: red;
+    color: deepskyblue;
 }
 .button{
     padding: 10px;
@@ -36,4 +37,9 @@ form a:hover{
     margin-left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+}
+body{
+    background: linear-gradient(to right, #ffffff98, rgba(255, 255, 255, 0.151)), url(../Img/fondo\ registro.jpg);
+    position: relative;
+    font-family: 'open sans';
 }
