@@ -37,9 +37,32 @@ form a:hover{
     margin-left: 50%;
     transform: translateX(-50%);
     cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+.button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 30px 0 rgba(0,0,0,0.19);
+    opacity: 0.98;
 }
 body{
     background: linear-gradient(to right, #ffffff98, rgba(255, 255, 255, 0.151)), url(../Img/fondo\ registro.jpg);
     position: relative;
     font-family: 'open sans';
+}
+span{
+    color: red;
+}
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: crimson;
+    padding-top: 20px;
+    font-weight: bold;
+}
+h5{
+    margin: 0;
 }

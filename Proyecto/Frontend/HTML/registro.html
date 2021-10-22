@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="../estilos/registro.css" rel="stylesheet">
+    <title>Registrarse</title>
+</head>
+<body>
+
+    <div>
+        <h1>Registrate</h1>
+
+        <form class="marg-form" id="form" method="POST" autocomplete="off" action="">
+            <p><span>Obligatorio (*)</span></p>
+
+            <label class="caja-texto" for="email">Correo Electronico <span>*</span>:</label>
+            <input class="caja-texto" type="email" id="email" name="email" placeholder="Escriba su correo electronico" required><br><br>
+
+            <label class="caja-texto" for="password">Contraseña <span>*</span>:</label>
+            <input class="caja-texto" type="text" id="password" name="password" placeholder="Escriba una contraseña" required>
+            <h5 class="formulario_mensaje">La contraseña debe ser de 4 a 8 caracteres.</h5><br>
+            
+            <label class="caja-texto" for="password2">Escriba su contraseña de nuevo <span>*</span>:</label>
+            <input class="caja-texto form" type="text" id="password2" name="password2" placeholder="Escriba su contraseña de nuevo" required><br><br>
+
+            <label class="caja-texto" for="nombreUsuario">Nombre de Usuario <span>*</span>:</label>
+            <input class="caja-texto" type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Escriba un Nombre de Usuario" required><br><br>
+
+            <label class="caja-texto" for="nombre">Nombre: </label>
+            <input class="caja-texto" type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"><br><br>
+
+            <label class="caja-texto" for="apellido">Apellido:</label>
+            <input class="caja-texto" type="text" id="apellido" name="apellido" placeholder="Escriba su apellido"><br><br>
+
+            <label>Genero:</label><br>
+            <input class="caja-radio" type="radio" id="femenino" name="genero" value="femenino">
+            <label class="caja-radio" for="femenino">Femenino</label><br>
+            <input class="caja-radio" type="radio" id="masculino" name="genero" value="masculino">
+            <label class="caja-radio" for="masculino">Masculino</label><br>
+            <input class="caja-radio" type="radio" id="otro" name="genero" value="otro">
+            <label class="caja-radio" for="otro">Otro, cual: <input class="caja-radio" type="text" id="otro" name="otro" placeholder="Escriba el genero"></label><br><br>
+
+            <label class="caja-texto" for="comentario">Informacion personal:</label><br>
+            <textarea class="caja-texto" id="comentario" name="comentario" rows="2" cols="20"></textarea><br>
+
+            <input class="button" type="submit" value="Registrarse"><br>
+
+            <p class="warnings" id="warnings"></p>
+
+            <p>Ya estas registrado? <a href="../HTML/login.html">Inicia Sesion</a></p>
+        </form>
+    </div>
+
+    <script src="../assets/validacion-registro.js"></script>
+
+</body>
+</html>
