@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+  <link href="../estilos/login.css" rel="stylesheet">
+  <title>Login</title>
+</head>
+<body>
+  <div>
+    <h1>Inicio Sesion</h1>
+
+    <form class="marg-form" id="form" method="POST" autocomplete="off" action="">
+
+      <label class="caja-texto" for="nombreUsuario">Nombre de Usuario:</label>
+      <input class="caja-texto" type="text" id="nombreUsuario" name="nombreUsuario" placeholder="Escriba su Nombre de Usuario" required><br><br>
+
+      <label class="caja-texto" for="email">Correo Electronico:</label>
+      <input class="caja-texto" type="email" id="email" name="email" placeholder="Escriba su correo electronico" required><br><br>
+
+      <label class="caja-texto" for="password">Contraseña:</label>
+      <input class="caja-texto" type="password" id="password" name="password" placeholder="Escriba su contraseña" required><br><br>
+
+      <input class="button" type="submit" value="Iniciar Sesion"><br>
+
+      <p class="warnings" id="warnings"></p>
+
+      <p>Aun no estas registrado? <a href="../HTML/registro.html">Registrate</a></p>
+
+    </form>
+  </div>
+
+  <script src="../assets/validacion-login.js"></script>
+
+</body>
+</html>
