@@ -17,13 +17,6 @@ h1{
     margin-bottom: 8px;
     font-family: 'open sans';
 }
-.caja-radio{
-    padding: 5px;
-    margin-bottom: 8px;
-    font-size: 15px;
-    font-family: 'open sans';
-    cursor: pointer;
-}
 a{
     color: blue;
     cursor: pointer;
