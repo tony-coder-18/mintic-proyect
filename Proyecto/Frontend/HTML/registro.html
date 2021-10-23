@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="../jquery/jquery-3.6.0.min.js"></script>
+<script>
+    
+</script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +17,7 @@
     <div>
         <h1>Registrate</h1>
 
-        <form class="marg-form" id="form" method="POST" autocomplete="off" action="">
+        <form class="marg-form" id="form" name="table" method="POST" autocomplete="off" action="">
             <p><span>Obligatorio (*)</span></p>
 
             <label class="caja-texto" for="email">Correo Electronico <span>*</span>:</label>
@@ -36,17 +40,9 @@
             <input class="caja-texto" type="text" id="apellido" name="apellido" placeholder="Escriba su apellido"><br><br>
 
             <label>Genero:</label><br>
-            <input class="caja-radio" type="radio" id="femenino" name="genero" value="femenino">
-            <label class="caja-radio" for="femenino">Femenino</label><br>
-            <input class="caja-radio" type="radio" id="masculino" name="genero" value="masculino">
-            <label class="caja-radio" for="masculino">Masculino</label><br>
-            <input class="caja-radio" type="radio" id="otro" name="genero" value="otro">
-            <label class="caja-radio" for="otro">Otro, cual: <input class="caja-radio" type="text" id="otro" name="otro" placeholder="Escriba el genero"></label><br><br>
+            <input class="caja-texto" type="text" id="genero" name="genero" placeholder="Escriba su genero"></label><br>
 
-            <label class="caja-texto" for="comentario">Informacion personal:</label><br>
-            <textarea class="caja-texto" id="comentario" name="comentario" rows="2" cols="20"></textarea><br>
-
-            <input class="button" type="submit" value="Registrarse"><br>
+            <input class="button" type="submit" id="registro" value="Registrarse"><br>
 
             <p class="warnings" id="warnings"></p>
 

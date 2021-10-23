@@ -6,33 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buscar Libros</title>
     <!-- Bootstrap Links -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/descripcion-libro.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script type="text/javascript">
+        function salirSesion(){
+          var respuesta = confirm("Estas seguro que deseas cerrar sesion?")
+  
+          if (respuesta == true){
+            return true;
+          }else{
+            return false;
+          }
+        }
+      </script>
 </head>
 <body>
-    <navbar class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
-            <h1 class="mb-lg-0">Buscar más libros</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse my-1" id="navbarSupportedContent">
-                <form class="d-flex mx-lg-auto ">
-                    <div class="col-auto">
-                        <label class="col-form-label" for="book-search">Introducir nombre del libro</label>
-                    </div>
-                    <input type="search" class="form-control ms-4" name="" id="book-search">
-                    <button type="submit" value="" class="btn btn-outline-success ms-2 ">
-                        <i class="bi-search"></i>
-                    </button>
-                </form>
-                <div class="navbar-brand ms-lg-4 ">
-                    <h2 class="nombre-usuario h4">Juanita</h2>
-                    <h3 class="desc-usuario h5">Amante de libros romanticos</h3>
-                </div>
-            </div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../HTML/biblioteca-general.html">Cali Libros</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../HTML/biblioteca-personal.html">Mis libros</a></li>
+              <li><a href="../HTML/inicio.html" onclick="return salirSesion()">Cerrar Sesion</a></li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <input type="text" class="form-control col-lg-8" placeholder="Ingresa el nombre de un libro...">
+            </form>
+          </div>
         </div>
-    </navbar>
+      </nav>
 
     <div class="book-list d-flex flex-column">
         <div class="container-fluid">
