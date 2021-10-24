@@ -1,0 +1,27 @@
+.bib-personal-navbar {
+    position: sticky;
+    margin-bottom: 0;
+}
+.book-list {
+    padding: 30px 0;
+}
+.bib-personal-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.book-div {
+    margin: 0 20px 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 4px 10px;
+    width: 18rem;
+}
+.book-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.usuario-name {
+    margin: 0 20px 30px;
+    text-align: center;
+}

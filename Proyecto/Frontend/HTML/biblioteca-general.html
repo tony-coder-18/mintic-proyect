@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="../assets/detalle-libro.js"></script>
+    <!-- <script src="../assets/detalle-libro.js"></script> -->
     <script type="text/javascript">
       function salirSesion(){
         var respuesta = confirm("Estas seguro que deseas cerrar sesion?")
@@ -49,96 +49,17 @@
           
       <div class="three">
         <h2 class="text-center"> Encontramos los siguientes libros</h2>
-        <div class="row justify-content-md-center">
-            <div class="col-xl-2 col-lg-4 col-md-6 col-12 box libro"><img src="https://imgv2-1-f.scribdassets.com/img/word_document/403968348/original/216x287/b0085ddccc/1628996105?v=1" alt="book1"
-                    width="170" height="250"></div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-12 box libro"><img src="https://lucasfh1976.files.wordpress.com/2018/12/hamlet.jpg?w=640" alt="book2"
-                    width="170" height="250"></div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-12 box libro"><img src="https://imgv2-1-f.scribdassets.com/img/word_document/403968348/original/216x287/b0085ddccc/1628996105?v=1" alt="book3"
-                    width="170" height="250"></div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-12 box libro"><img src="https://imgv2-1-f.scribdassets.com/img/word_document/403968348/original/216x287/b0085ddccc/1628996105?v=1" alt="book4"
-                    width="170" height="250"></div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-12 box libro"><img src="https://imgv2-1-f.scribdassets.com/img/word_document/403968348/original/216x287/b0085ddccc/1628996105?v=1" alt="book5"
-                    width="170" height="250"></div>
-            <div class="col-xl-2 col-lg-4 col-md-6 col-12 box libro"><img src="https://imgv2-1-f.scribdassets.com/img/word_document/403968348/original/216x287/b0085ddccc/1628996105?v=1" alt="book6"
-                    width="170" height="250"></div>
+        <div id="booksContainer" class="row justify-content-md-center">
+             <!-- Libros -->
         </div>
     </div>
   </div>
   
+  <div id="modalsContainer" >
   <!-- Modal -->
-              <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="text-danger fa fa-times"></i></button>
-                      <h4 class="modal-title" id="myModalLabel"><i class="text-muted fa fa-shopping-cart"></i> <strong>1</strong> - Volar sobre el pantano </h4>
-                    </div>
-                    <div class="modal-body">
-                    
-                      <table class="pull-left col-md-8 ">
-                           <tbody>
-                               <tr>
-                                   <td class="h6"><strong>Autor</strong></td>
-                                   <td> </td>
-                                   <td class="h5">Carlos Cauthemoc Sanchez</td>
-                               </tr>
-                               
-                               <tr>
-                                   <td class="h6"><strong>Año de publicacion</strong></td>
-                                   <td> </td>
-                                   <td class="h5">1995</td>
-                               </tr>
-                               
-                               <tr>
-                                   <td class="h6"><strong>Editorial</strong></td>
-                                   <td> </td>
-                                   <td class="h5">Ediciones Selectas Diamante</td>
-                               </tr>
-  
-                           </tbody>
-                      </table>
-                               
-                           
-                      <div class="col-md-4"> 
-                          <img src="https://imgv2-1-f.scribdassets.com/img/word_document/403968348/original/216x287/b0085ddccc/1628996105?v=1" alt="teste" class="img-thumbnail">  
-                      </div>
-                      
-                      <div class="clearfix"></div>
-                     <p class="open_info">
-                      Las pesadillas han vuelto. Son demasiado reales. Sueño a mi hermana. La escucho gritar, llorar, suplicarme, y me despierto sudando, viéndola como si estuviera allí, con su gesto solitario, ávido de afecto...</p>
-                     </p>
+  </div>
 
-                     <p class="open_info">
-                       —Me asusta tu mirada. ¿Dónde está ella?
-                     </p>
-                     
-                     <p class="open_info">
-                       —Escribió una carta. Necesita ayuda urgente...
-                      </p>
-                     
-                      <p class="open_info">
-                       Volar sobre el pantano es una novela magnética. Los protagonistas, Zahid y Lisbeth, recién casados, se aprestan a tratar de rescatar a Alma, una joven que se halla al borde de la muerte. Durante su odisea por encontrarla, charlan sobre las terribles vicisitudes que cada uno tuvo que superar para escapar de alcoholismo, maltrato físico, abuso sexual, embarazo no deseado, pandillerismo y muchas otras adversidades.
-                      </p>
-                    
-                    
-                    </div>
-                      
-                    <div class="modal-footer">       
-                        
-                      <div class="text-right pull-right col-md-3">
-                          <a href="#" class="btn btn-info pull-right" id="back-to-bootsnipp">Añadir a biblioteca</a>
-                      </div> 
-                        
-                      <div class="text-right pull-right col-md-3">
-                        <a href="#" class="btn btn-primary pull-right" id="back-to-bootsnipp">Me gusta</a>
-                      </div>
-                       
-                  </div>
-                </div>
-              </div>
-              </div>
-  <!-- fim Modal-->  
+  <script src="../assets/biblioteca-general.js"></script>
   </body>
 </html>
 
