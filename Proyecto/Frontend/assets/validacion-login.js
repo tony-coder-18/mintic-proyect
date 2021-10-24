@@ -1,4 +1,4 @@
-src="../jquery/jquery-3.6.0.min.js"
+ src="../jquery/jquery-3.6.0.min.js"
 
 const email = document.getElementById("email")
 const password = document.getElementById("password")
@@ -44,8 +44,10 @@ form.addEventListener("submit", e=>{
         if (entrar){
             parrafo.innerHTML = warnings
         }else{
-            alert ("Bienvenido a esta pagina web")
-            location.href = "../HTML/biblioteca-general.html"
+
+            alert ("Bienvenido a esta pagina web");
+            
+            location.href = "../HTML/biblioteca-personal.html"
         }
     })
 })
