@@ -47,7 +47,7 @@ form.addEventListener("submit", e=>{
 
             alert ("Bienvenido a esta pagina web");
             
-            location.href = "../HTML/biblioteca-personal.html"
+            location.href = "../HTML/biblioteca-general.html"
         }
     })
 })
